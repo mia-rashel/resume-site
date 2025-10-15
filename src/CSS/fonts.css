@@ -1,0 +1,33 @@
+/* src/CSS/fonts.css or in your main App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Apply globally */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #1c3b4d;
+  background-color: #f3e6dd;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings and important titles */
+h1, h2, h3, h4, h5, h6,
+.hero-title,
+.about-title,
+.skills-title {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 600;
+  color: #1c3b4d;
+  letter-spacing: 0.5px;
+}
+
+/* Buttons and key labels */
+button,
+.btn-primary,
+.btn-secondary {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  text-transform: none;
+  letter-spacing: 0.4px;
+}

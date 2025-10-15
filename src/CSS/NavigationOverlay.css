@@ -1,0 +1,85 @@
+/* Overlay always exists, hidden by default */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #c94b4b;
+  color: white;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  transform: translateX(100%);
+  transition: transform 0.6s ease-in-out;
+  overflow: hidden;
+}
+
+/* Slide-in */
+.overlay-open {
+  transform: translateX(0);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+/* Navigation links */
+.nav-links {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+/* Animate links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateX(20px);
+  animation: fadeSlideIn 0.6s forwards;
+}
+/* Make nav buttons look like links */
+.nav-links .nav-link-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  text-align: left;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+
+.nav-links a:nth-child(1) { animation-delay: 0.2s; }
+.nav-links a:nth-child(2) { animation-delay: 0.4s; }
+.nav-links a:nth-child(3) { animation-delay: 0.6s; }
+.nav-links a:nth-child(4) { animation-delay: 0.8s; }
+.nav-links a:nth-child(5) { animation-delay: 1s; }
+
+.nav-links a:hover {
+  font-weight: 600;
+  transform: translateX(30px);
+}
+
+/* Keyframes for fade + slide in */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

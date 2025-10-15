@@ -1,0 +1,149 @@
+/* src/CSS/About.css */
+
+/* ===== Layout ===== */
+.about-section {
+  padding: 4rem 8%;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+}
+
+/* Text */
+.about-text {
+  max-width: 600px;
+}
+
+.about-title {
+  font-family: "Georgia", serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #1c3b4d;
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1c3b4d;
+  margin-bottom: 1rem;
+}
+
+/* Image */
+.about-image img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* ===== Buttons ===== */
+.about-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;     /* ensures equal heights */
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 720px;         /* enough space to stay side-by-side on laptops */
+}
+
+/* Normalize & share styles for both <a> and <button> */
+.btn-primary,
+.btn-secondary {
+  /* layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;                  /* equal width side-by-side */
+  min-width: 260px;
+
+  /* identical box metrics */
+  height: 64px;
+  padding: 0 24px;          /* horizontal padding only (height is fixed) */
+  box-sizing: border-box;
+  line-height: 1;           /* normalize */
+  border-radius: 18px;
+  border: 2px solid #1c3b4d;
+
+  /* typography & effects */
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
+
+  /* remove browser button styles */
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  color: #1c3b4d;
+
+  /* subtle shadow */
+  box-shadow: 0 4px 10px rgba(28, 59, 77, 0.10);
+}
+
+/* Filled version (use on either element by giving class 'btn-primary') */
+.btn-primary {
+  background-color: #1c3b4d;
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: #14313f;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(28, 59, 77, 0.25);
+}
+
+/* Outlined version */
+.btn-secondary:hover {
+  background-color: #1c3b4d;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(28, 59, 77, 0.25);
+}
+
+/* Focus ring (keyboard) */
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(28, 59, 77, 0.25);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .about-image {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 90%;
+  }
+}
+
+/* Stack only on small phones */
+@media (max-width: 640px) {
+  .about-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 500px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    min-width: 0;
+    height: 64px;          /* keep heights identical on mobile */
+    font-size: 1.15rem;
+  }
+}

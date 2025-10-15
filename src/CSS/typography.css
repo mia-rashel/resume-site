@@ -1,0 +1,148 @@
+/* src/CSS/typography.css  */
+
+/* 1) Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* 2) Base + scale */
+:root {
+  /* Responsive base size */
+  --font-base: clamp(15px, 0.25vw + 14px, 18px);
+
+  /* Responsive heading sizes */
+  --h1: clamp(2.4rem, 3.2vw + 1.2rem, 4rem);
+  --h2: clamp(2rem, 2.2vw + 1rem, 3rem);
+  --h3: clamp(1.35rem, 1.2vw + 0.9rem, 1.8rem);
+
+  --lead: clamp(1.05rem, 0.35vw + 0.9rem, 1.25rem);
+  --small: 0.92rem;
+
+  --text: #1c3b4d;
+  --text-muted: color-mix(in oklab, #1c3b4d 70%, #1c3b4d 0%);
+}
+
+html { font-size: 100%; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: var(--font-base);
+  color: var(--text);
+  background: #f3e6dd;
+  line-height: 1.65;
+  letter-spacing: 0.2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3) Global headings + paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+
+p { margin: 0 0 1rem; }
+
+/* Tighten last paragraph in a block */
+p:last-child { margin-bottom: 0; }
+
+/* 4) Buttons / labels */
+button,
+.btn-primary,
+.btn-secondary {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: none;
+  line-height: 1; /* keeps height consistent with CSS you have */
+}
+
+/* 5) Section-specific typography */
+
+/* --- HERO --- */
+.hero-title {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-size: clamp(2.2rem, 2.6vw + 1.6rem, 3.8rem);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-size: clamp(0.9rem, 0.35vw + 0.8rem, 1.05rem);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.hero-description {
+  font-size: var(--lead);
+  line-height: 1.75;
+  max-width: 62ch;
+}
+
+/* --- ABOUT --- */
+.about-title {
+  font-family: 'Poppins', 'Inter', sans-serif !important;
+  font-size: clamp(2rem, 1.6vw + 1.4rem, 2.6rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  font-size: var(--lead);
+  line-height: 1.75;
+  max-width: 68ch;
+  color: var(--text);
+}
+
+/* --- SKILLS --- */
+.skills-title {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-size: clamp(2rem, 1.6vw + 1.2rem, 2.6rem);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.skills-text {
+  font-size: var(--lead);
+  line-height: 1.75;
+  max-width: 70ch;
+}
+
+.skills-head {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.skills-list li {
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+/* --- FOOTER --- */
+.site-footer,
+footer p {
+  font-size: var(--small);
+  color: color-mix(in oklab, var(--text) 85%, white);
+  letter-spacing: 0.2px;
+}
+
+/* 6) Responsive refinements */
+@media (max-width: 900px) {
+  .hero-description,
+  .about-description,
+  .skills-text {
+    max-width: 100%;
+  }
+}

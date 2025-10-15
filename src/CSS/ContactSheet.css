@@ -1,0 +1,146 @@
+/* ===== Contact Sheet (modal) ===== */
+
+:root {
+  --cs-primary: #1c3b4d;
+  --cs-accent: #c94b4b;
+  --cs-border: rgba(28, 59, 77, 0.12);
+  --cs-border-soft: rgba(28, 59, 77, 0.14);
+  --cs-overlay: rgba(0, 0, 0, 0.65);
+  --cs-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
+/* overlay */
+.cs-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647; /* max practical */
+  background: var(--cs-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: cs-fade .18s ease;
+}
+
+/* modal card */
+.cs-modal {
+  width: min(420px, 92vw);
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--cs-border);
+  box-shadow: var(--cs-shadow);
+  overflow: hidden;
+  transform: scale(.96);
+  opacity: 0;
+  animation: cs-scaleIn .18s ease forwards;
+}
+
+/* header */
+.cs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--cs-border);
+  background: #fff;
+}
+
+.cs-title {
+  color: var(--cs-primary);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  margin: 0 0 2px;
+}
+
+.cs-email {
+  color: var(--cs-primary);
+  opacity: .8;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* close button: icon-only, no background */
+.cs-close {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9999px;
+  border: none;
+  background: transparent;       /* ← no fill */
+  color: var(--cs-primary);
+  cursor: pointer;
+  transition: transform .12s ease, color .12s ease;
+  outline: none;
+}
+.cs-close:hover {
+  color: #10242e;
+
+}
+.cs-close:focus-visible {
+  box-shadow: 0 0 0 3px rgba(28, 59, 77, .2);
+}
+
+/* body */
+.cs-body {
+  padding: 14px;
+  overflow-y: auto;
+  display: grid;
+  gap: 12px;
+}
+
+/* action row */
+.cs-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 12px;
+  background: #fff;
+  border: 1px solid var(--cs-border-soft);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--cs-primary);
+  transition: border-color .12s ease, transform .12s ease, box-shadow .12s ease;
+}
+.cs-row:hover {
+  border-color: var(--cs-accent);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+.cs-row:active {
+  transform: translateY(0);
+}
+
+/* icon */
+.cs-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+}
+
+/* labels */
+.cs-row-title {
+  font-weight: 600;
+  line-height: 1.2;
+}
+.cs-row-sub {
+  font-size: 13px;
+  opacity: .7;
+  line-height: 1.4;
+}
+
+/* subtle animations */
+@keyframes cs-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes cs-scaleIn {
+  from { transform: scale(.96); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
