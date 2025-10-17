@@ -1,5 +1,5 @@
 // src/components/Skills.jsx
-import "../CSS/skills.css";
+import "../CSS/Skills.css";
 
 export default function Skills() {
   return (
