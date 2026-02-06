@@ -30,7 +30,7 @@ export default function Footer() {
 
         {/* Copyright (center) */}
         <p className="flex-1 text-center text-sm text-[#1c3b4d]">
-          Copyright © 2025 Muhammad Rashel Mia. All Rights Reserved
+          Copyright © 2026 Muhammad Rashel Mia. All Rights Reserved
         </p>
 
         {/* Right side placeholder */}

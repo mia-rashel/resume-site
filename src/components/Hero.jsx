@@ -13,21 +13,23 @@ export default function Hero() {
           </h1>
 
           <p className="hero-subtitle uppercase text-[#c94b4b] tracking-[0.25em] mb-4">
-            Cloud Engineer
-          </p>
+  Cloud & DevOps Engineer
+</p>
 
-          <hr className="hero-divider border-t-[3px] border-[#1c3b4d] w-16 mb-6" />
+<hr className="hero-divider border-t-[3px] border-[#1c3b4d] w-16 mb-6" />
 
-          <p className="hero-description text-[#1c3b4d]/90 text-lg leading-relaxed">
-            Building scalable <span className="font-semibold">cloud architectures</span> 
-            and intelligent <span className="font-semibold">distributed systems </span> 
-            that blend performance, reliability, and thoughtful design.
-          </p>
+<p className="hero-description text-[#1c3b4d]/90 text-lg leading-relaxed">
+  Building secure, scalable <span className="font-semibold">cloud infrastructure</span>{" "}
+  and intelligent <span className="font-semibold">distributed systems</span>{" "}
+  with a focus on reliability, performance, and automation.
+</p>
 
-          <p className="hero-description text-[#1c3b4d]/90 text-lg leading-relaxed">
-            AWS Certified Cloud Practitioner | M.Eng. in Electrical & Computer Engineering, 
-            <span className="font-semibold"> Concordia University</span>.
-          </p>
+<p className="hero-description text-[#1c3b4d]/90 text-lg leading-relaxed">
+  AWS Certified Solutions Architect – Associate | HashiCorp Certified - Terraform Associate  |{" "}
+  M.Eng. in Electrical & Computer Engineering,
+  <span className="font-semibold"> Concordia University</span>.
+</p>
+
         </div>
 
         {/* Right Side: Image */}

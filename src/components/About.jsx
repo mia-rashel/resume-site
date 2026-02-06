@@ -23,33 +23,48 @@ export default function About() {
           <h2 className="about-title text-4xl font-light mb-6">About Me</h2>
 
           <p className="about-description text-lg leading-relaxed mb-4">
-            I’m <span className="font-semibold">Muhammad Rashel Mia</span>, a passionate
-            Cloud Engineer with a Master’s degree in{" "}
-            <span className="font-semibold">Electrical & Computer Engineering</span> from{" "}
-            <span className="font-semibold">Concordia University, Canada</span>.
-          </p>
+  I’m <span className="font-semibold">Muhammad Rashel Mia</span>, a passionate
+  Cloud & DevOps Engineer with a Master’s degree in{" "}
+  <strong>Electrical & Computer Engineering</strong> from{" "}
+  <span className="font-semibold">Concordia University, Canada</span>.
+</p>
 
-          <p className="about-description text-lg leading-relaxed mb-4">
-            I hold an <span className="font-semibold">AWS Certified Cloud Practitioner</span> 
-            credential and specialize in <span className="font-semibold">cloud computing</span>,{" "}
-            <span className="font-semibold">distributed software systems</span>, and{" "}
-            <span className="font-semibold">modern software engineering</span>.
-          </p>
+<p className="about-description text-lg leading-relaxed mb-4">
+  I hold the{" "}
+  <strong>AWS Certified Solutions Architect – Associate</strong>,{" "}
+  <strong>HashiCorp Terraform Associate</strong>{" "}
+  <strong>AWS Certified Cloud Practitioner</strong>, and{" "}
+  
+  certifications, and specialize in{" "}
+  <span className="font-semibold">cloud infrastructure</span>,{" "}
+  <span className="font-semibold">infrastructure as code</span>,{" "}
+  <span className="font-semibold">distributed systems</span>, and{" "}
+  <span className="font-semibold">modern software engineering</span>.
+</p>
 
-          <p className="about-description text-lg leading-relaxed mb-4">
-            I enjoy transforming complex challenges into secure, scalable, and efficient 
-            cloud solutions — integrating technologies like AWS, React, Node.js, and Docker 
-            to deliver impactful digital experiences.
-          </p>
+<p className="about-description text-lg leading-relaxed mb-4">
+  I enjoy transforming complex challenges into secure, scalable, and cost-efficient
+  cloud solutions — integrating technologies like{" "}
+  <span className="font-semibold">AWS</span>,{" "}
+  <span className="font-semibold">Terraform</span>,{" "}
+  <span className="font-semibold">Docker</span>,{" "}
+  <span className="font-semibold">React</span>, and{" "}
+  <span className="font-semibold">Node.js</span>{" "}
+  to deliver reliable, production-ready systems.
+</p>
 
-          <p className="about-description text-lg leading-relaxed mb-8">
-            Driven by curiosity and innovation, I continuously explore the evolving landscape 
-            of cloud architecture to design systems that empower performance and reliability.
-          </p>
+<p className="about-description text-lg leading-relaxed mb-8">
+  Driven by curiosity and continuous learning, I explore evolving cloud and DevOps
+  practices to design architectures that emphasize{" "}
+  <span className="font-semibold">automation</span>,{" "}
+  <span className="font-semibold">performance</span>, and{" "}
+  <span className="font-semibold">resilience</span>.
+</p>
+
 
           {/* Buttons */}
           <div className="about-buttons">
-            <a href="/resume.pdf" download="Muhammad_Rashel_Mia_Resume.pdf" className="btn-secondary">Download Resume</a>
+            <a href="/Muhammad_Rashel_Mia_Resume-v2.pdf" download="Muhammad_Rashel_Mia_Resume.pdf" className="btn-secondary">Download Resume</a>
             <ContactSheet triggerClassName="btn-secondary">Contact Me</ContactSheet>
           </div>
         </div>
