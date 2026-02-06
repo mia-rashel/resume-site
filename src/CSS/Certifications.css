@@ -1,0 +1,79 @@
+/* src/CSS/Certifications.css */
+
+.certifications-section {
+  padding: 4rem 8%;
+}
+
+.certifications-wrapper {
+  width: 100%;
+}
+
+/* Section title → uses Poppins automatically via fonts.css */
+.certifications-title {
+  font-size: 2.4rem;
+  font-weight: 600; /* matches h2 system */
+  margin-bottom: 2rem;
+}
+
+/* List */
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* Item */
+.certification-item {
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(28, 59, 77, 0.3);
+}
+
+.certification-item:last-child {
+  border-bottom: none;
+}
+
+/* Header row */
+.certification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Certification name → h3 already uses Poppins */
+.certification-header h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  max-width: 85%;
+}
+
+/* Year → body font (Inter) */
+.certification-header span {
+  font-size: 0.85rem;
+  color: rgba(28, 59, 77, 0.65);
+  white-space: nowrap;
+}
+
+/* Issuer & credential → Inter */
+.certification-issuer {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: rgba(28, 59, 77, 0.8);
+}
+
+.certification-id {
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: rgba(28, 59, 77, 0.8)
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .certification-header {
+    flex-direction: column;
+  }
+
+  .certification-header span {
+    margin-top: 0.3rem;
+  }
+}

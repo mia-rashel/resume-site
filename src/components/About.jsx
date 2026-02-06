@@ -49,7 +49,7 @@ export default function About() {
 
           {/* Buttons */}
           <div className="about-buttons">
-            <a href="/resume.pdf" download className="btn-secondary">Download Resume</a>
+            <a href="/resume.pdf" download="Muhammad_Rashel_Mia_Resume.pdf" className="btn-secondary">Download Resume</a>
             <ContactSheet triggerClassName="btn-secondary">Contact Me</ContactSheet>
           </div>
         </div>
