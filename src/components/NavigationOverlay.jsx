@@ -53,8 +53,7 @@ export default function NavigationOverlay({ open, onClose }) {
         <button onClick={() => go("home")} className="nav-link-btn">Home</button>
         <button onClick={() => go("about")} className="nav-link-btn">About</button>
         <button onClick={() => go("skills")} className="nav-link-btn">Skills</button>
-        <button onClick={() => go("projects")} className="nav-link-btn">Projects</button>
-        <button onClick={() => go("contact")} className="nav-link-btn">Contact</button>
+        <button onClick={() => go("certifications")} className="nav-link-btn">Certifications</button>
       </nav>
     </div>
   );
