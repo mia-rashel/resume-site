@@ -2,7 +2,7 @@
 
 /* ===== Layout ===== */
 .about-section {
-  padding: 4rem 8%;
+  padding:  4rem 8% 3rem 8%;
 }
 
 .about-wrapper {
@@ -35,7 +35,7 @@
 
 /* Image */
 .about-image img {
-  width: 100%;
+  width: 600px;
   max-width: 100%;
   border-radius: 8px;
   display: block;

@@ -1,0 +1,136 @@
+/* src/CSS/Projects.css */
+
+.projects-section {
+  padding: 2rem 8%;
+  background-color: #f3e6dd;
+}
+
+.projects-wrapper {
+  width: 100%;
+}
+
+/* Section Title (inherits Poppins from fonts.css) */
+.projects-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: #1c3b4d;
+}
+
+/* List */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Card */
+.project-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid rgba(28, 59, 77, 0.08);
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease,
+              border-color 0.3s ease;
+}
+
+/* 🔥 Subtle Premium Hover */
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(28, 59, 77, 0.15);
+  border-color: rgba(28, 59, 77, 0.2);
+}
+
+/* Project Title */
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1c3b4d;
+  margin-bottom: 1rem;
+}
+
+/* Description */
+.project-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1c3b4d;
+  margin-bottom: 1.5rem;
+}
+
+/* Stack */
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.stack-tag {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background-color: rgba(243, 230, 221, 0.7);
+  color: #1c3b4d;
+  border: 1px solid rgba(28, 59, 77, 0.2);
+}
+
+/* Button */
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+
+  border: 2px solid #1c3b4d;
+  color: #1c3b4d;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+
+  transition: all 0.25s ease;
+}
+
+.project-btn:hover {
+  background-color: #1c3b4d;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(28, 59, 77, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 2rem;
+  }
+}
+
+/* Architecture Preview */
+.architecture-preview {
+  display: block;
+  margin: 1.8rem auto;
+
+  width: 100%;
+  max-width: 600px; /* 👈 controls size cleanly */
+
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(28, 59, 77, 0.1);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diagram-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(28, 59, 77, 0.7);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.architecture-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
