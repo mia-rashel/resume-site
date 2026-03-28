@@ -64,7 +64,7 @@ export default function About() {
 
           {/* Buttons */}
           <div className="about-buttons">
-            <a href="/Muhammad_Rashel_Mia_Resume_v4.pdf" download="Muhammad_Rashel_Mia_Resume.pdf" className="btn-secondary">Download Resume</a>
+            <a href="/Muhammad_Rashel_Mia_Resume_v5.pdf" download="Muhammad_Rashel_Mia_Resume.pdf" className="btn-secondary">Download Resume</a>
             <ContactSheet triggerClassName="btn-secondary">Contact Me</ContactSheet>
           </div>
         </div>
