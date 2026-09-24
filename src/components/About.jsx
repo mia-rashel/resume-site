@@ -23,7 +23,7 @@ export default function About() {
           <h2 className="about-title text-4xl font-light mb-6">About Me</h2>
 
           <p className="about-description text-lg leading-relaxed mb-4">
-  I’m <span className="font-semibold">Muhammad Rashel Mia</span>, a passionate
+  I’m <span className="font-semibold">Mia MiaMuhammad Rashel Mia</span>, a passionate
   Cloud & DevOps Engineer with a Master’s degree in{" "}
   <strong>Electrical & Computer Engineering</strong> from{" "}
   <span className="font-semibold">Concordia University, Canada</span>.
